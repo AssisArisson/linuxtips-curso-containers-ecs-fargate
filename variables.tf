@@ -81,3 +81,11 @@ variable "cluster_spot_max_size" {
 variable "cluster_spot_desired_size" {
 
 }
+
+variable "capacity_providers" {
+    type = list
+    default = [
+        "FARGATE", "FARGATE_SPOT"
+    ]
+  
+}
